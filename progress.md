@@ -3,7 +3,7 @@
 ## Status geral
 MILESTONE ATUAL: 1 — Fundação
 INÍCIO: Março 2026
-ÚLTIMA SESSÃO: —
+ÚLTIMA SESSÃO: 2026-03-27
 
 ---
 
@@ -12,11 +12,10 @@ INÍCIO: Março 2026
 **Entregável:** Usuário consegue acessar o quiz, capturar email, e ver a estrutura base do sistema
 
 FEITO:
-- (vazio — preencher conforme implementar)
+- [x] Inicializar projeto Next.js 14 com App Router + Tailwind + shadcn/ui
+- [x] Configurar repositório Git + .gitignore
 
 FALTA:
-- [ ] Inicializar projeto Next.js 14 com App Router + Tailwind + shadcn/ui
-- [ ] Configurar repositório Git + .gitignore
 - [ ] Setup Supabase: criar tabelas (users, test_sessions, purchases, modules, lessons, site_settings)
 - [ ] Configurar RLS em todas as tabelas
 - [ ] Auth com Supabase Auth (email + password)
