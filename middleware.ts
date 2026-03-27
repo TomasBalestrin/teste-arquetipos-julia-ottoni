@@ -13,7 +13,7 @@ export async function middleware(request: NextRequest) {
           return request.cookies.getAll();
         },
         setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value, options }) =>
+          cookiesToSet.forEach(({ name, value }) =>
             request.cookies.set(name, value)
           );
           supabaseResponse = NextResponse.next({ request });
@@ -36,10 +36,9 @@ export async function middleware(request: NextRequest) {
     "/arquetipos",
     "/aulas",
     "/refazer-teste",
+    "/redefinir-senha",
   ];
-  const isAuthRoute = authRoutes.some((route) =>
-    pathname.startsWith(route)
-  );
+  const isAuthRoute = authRoutes.some((r) => pathname.startsWith(r));
   const isAdminRoute = pathname.startsWith("/admin");
 
   if ((isAuthRoute || isAdminRoute) && !user) {
@@ -71,6 +70,7 @@ export const config = {
     "/arquetipos/:path*",
     "/aulas/:path*",
     "/refazer-teste/:path*",
+    "/redefinir-senha/:path*",
     "/admin/:path*",
   ],
 };

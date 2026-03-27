@@ -57,13 +57,15 @@ FALTA:
 **Objetivo:** Área logada completa com conteúdo + painel admin funcional + pronto para produção
 **Entregável:** Sistema completo funcionando com gestão de conteúdo e acesso pago
 
+FEITO:
+- [x] Dashboard do membro: resumo dos 3 arquétipos com descrições completas
+- [x] Carrossel de módulos na dashboard
+- [x] Página de aulas: cards com imagem + título
+- [x] Modal/popup de aula com player (link externo ou iframe VTurb)
+- [x] Funcionalidade de refazer teste (sem pagar, sem email)
+- [x] Tela de redefinição de senha (primeiro acesso)
+
 FALTA:
-- [ ] Dashboard do membro: resumo dos 3 arquétipos com descrições completas
-- [ ] Carrossel de módulos na dashboard
-- [ ] Página de aulas: cards com imagem + título
-- [ ] Modal/popup de aula com player (link externo ou iframe VTurb)
-- [ ] Funcionalidade de refazer teste (sem pagar, sem email)
-- [ ] Tela de redefinição de senha (primeiro acesso)
 - [ ] Painel admin: listagem de leads (test_sessions)
 - [ ] Painel admin: listagem de compras
 - [ ] Painel admin: listagem de usuários
