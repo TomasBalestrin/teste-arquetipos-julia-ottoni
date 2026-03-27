@@ -34,18 +34,21 @@ FALTA:
 **Objetivo:** Fluxo completo do quiz funcionando com cálculo de arquétipos, resultado parcial, e integração Hotmart
 **Entregável:** Usuário faz o teste, vê Top 3, clica no CTA, paga na Hotmart, e o sistema cria o acesso automaticamente
 
+FEITO:
+- [x] Tela de introdução do quiz (etapa 1)
+- [x] Tela de captura de email (etapa 2) + criação de test_session
+- [x] Componente de pergunta com 4 opções (etapas 3-11)
+- [x] Barra de progresso visual do quiz
+- [x] Lógica de scoring por arquétipo (salvar a cada resposta)
+- [x] Cálculo do Top 3 ao finalizar (etapa 11 → 12)
+- [x] Tela de resultado parcial (etapa 12) com Top 3 + CTA
+- [x] Facebook Pixel: PageView na etapa 1 + ClickCTA no botão de oferta
+
+- [x] API Route para webhook Hotmart
+- [x] Lógica de criação de usuário automática pós-webhook (senha: julia123)
+- [x] Vincular test_session ao user criado
+
 FALTA:
-- [ ] Tela de introdução do quiz (etapa 1)
-- [ ] Tela de captura de email (etapa 2) + criação de test_session
-- [ ] Componente de pergunta com 4 opções (etapas 3-11)
-- [ ] Barra de progresso visual do quiz
-- [ ] Lógica de scoring por arquétipo (salvar a cada resposta)
-- [ ] Cálculo do Top 3 ao finalizar (etapa 11 → 12)
-- [ ] Tela de resultado parcial (etapa 12) com Top 3 + CTA
-- [ ] Facebook Pixel: PageView na etapa 1 + ClickCTA no botão de oferta
-- [ ] API Route para webhook Hotmart
-- [ ] Lógica de criação de usuário automática pós-webhook (senha: julia123)
-- [ ] Vincular test_session ao user criado
 - [ ] Testes manuais do fluxo completo (quiz → Hotmart → webhook → login)
 
 ---
