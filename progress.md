@@ -44,10 +44,11 @@ FEITO:
 - [x] Tela de resultado parcial (etapa 12) com Top 3 + CTA
 - [x] Facebook Pixel: PageView na etapa 1 + ClickCTA no botão de oferta
 
+- [x] API Route para webhook Hotmart
+- [x] Lógica de criação de usuário automática pós-webhook (senha: julia123)
+- [x] Vincular test_session ao user criado
+
 FALTA:
-- [ ] API Route para webhook Hotmart
-- [ ] Lógica de criação de usuário automática pós-webhook (senha: julia123)
-- [ ] Vincular test_session ao user criado
 - [ ] Testes manuais do fluxo completo (quiz → Hotmart → webhook → login)
 
 ---
