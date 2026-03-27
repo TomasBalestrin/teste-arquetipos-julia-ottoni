@@ -15,9 +15,10 @@ FEITO:
 - [x] Inicializar projeto Next.js 14 com App Router + Tailwind + shadcn/ui
 - [x] Configurar repositório Git + .gitignore
 
+- [x] Setup Supabase: criar tabelas (users, test_sessions, purchases, modules, lessons, site_settings)
+- [x] Configurar RLS em todas as tabelas
+
 FALTA:
-- [ ] Setup Supabase: criar tabelas (users, test_sessions, purchases, modules, lessons, site_settings)
-- [ ] Configurar RLS em todas as tabelas
 - [ ] Auth com Supabase Auth (email + password)
 - [ ] Layout público (quiz pages)
 - [ ] Layout autenticado (sidebar + header + área de conteúdo)
