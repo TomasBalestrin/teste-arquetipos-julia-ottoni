@@ -18,12 +18,13 @@ FEITO:
 - [x] Setup Supabase: criar tabelas (users, test_sessions, purchases, modules, lessons, site_settings)
 - [x] Configurar RLS em todas as tabelas
 
+- [x] Auth com Supabase Auth (email + password)
+- [x] Layout público (quiz pages)
+- [x] Layout autenticado (sidebar + header + área de conteúdo)
+- [x] Layout admin (sidebar admin + proteção de rota)
+- [x] Criar admin seed (usuário admin manual no banco)
+
 FALTA:
-- [ ] Auth com Supabase Auth (email + password)
-- [ ] Layout público (quiz pages)
-- [ ] Layout autenticado (sidebar + header + área de conteúdo)
-- [ ] Layout admin (sidebar admin + proteção de rota)
-- [ ] Criar admin seed (usuário admin manual no banco)
 - [ ] Deploy em staging na Vercel
 - [ ] Testar login/logout em staging
 
