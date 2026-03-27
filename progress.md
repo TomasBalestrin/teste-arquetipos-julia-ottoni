@@ -3,7 +3,7 @@
 ## Status geral
 MILESTONE ATUAL: 1 — Fundação
 INÍCIO: Março 2026
-ÚLTIMA SESSÃO: —
+ÚLTIMA SESSÃO: 2026-03-27
 
 ---
 
@@ -12,18 +12,19 @@ INÍCIO: Março 2026
 **Entregável:** Usuário consegue acessar o quiz, capturar email, e ver a estrutura base do sistema
 
 FEITO:
-- (vazio — preencher conforme implementar)
+- [x] Inicializar projeto Next.js 14 com App Router + Tailwind + shadcn/ui
+- [x] Configurar repositório Git + .gitignore
+
+- [x] Setup Supabase: criar tabelas (users, test_sessions, purchases, modules, lessons, site_settings)
+- [x] Configurar RLS em todas as tabelas
+
+- [x] Auth com Supabase Auth (email + password)
+- [x] Layout público (quiz pages)
+- [x] Layout autenticado (sidebar + header + área de conteúdo)
+- [x] Layout admin (sidebar admin + proteção de rota)
+- [x] Criar admin seed (usuário admin manual no banco)
 
 FALTA:
-- [ ] Inicializar projeto Next.js 14 com App Router + Tailwind + shadcn/ui
-- [ ] Configurar repositório Git + .gitignore
-- [ ] Setup Supabase: criar tabelas (users, test_sessions, purchases, modules, lessons, site_settings)
-- [ ] Configurar RLS em todas as tabelas
-- [ ] Auth com Supabase Auth (email + password)
-- [ ] Layout público (quiz pages)
-- [ ] Layout autenticado (sidebar + header + área de conteúdo)
-- [ ] Layout admin (sidebar admin + proteção de rota)
-- [ ] Criar admin seed (usuário admin manual no banco)
 - [ ] Deploy em staging na Vercel
 - [ ] Testar login/logout em staging
 
