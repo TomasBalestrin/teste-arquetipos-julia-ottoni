@@ -1,9 +1,9 @@
 # Progress — Teste dos Arquétipos
 
 ## Status geral
-MILESTONE ATUAL: 1 — Fundação
+MILESTONE ATUAL: 3 — Completo
 INÍCIO: Março 2026
-ÚLTIMA SESSÃO: 2026-03-27
+ÚLTIMA SESSÃO: 2026-03-28
 
 ---
 
@@ -65,15 +65,15 @@ FEITO:
 - [x] Funcionalidade de refazer teste (sem pagar, sem email)
 - [x] Tela de redefinição de senha (primeiro acesso)
 
-FALTA:
-- [ ] Painel admin: listagem de leads (test_sessions)
-- [ ] Painel admin: listagem de compras
-- [ ] Painel admin: listagem de usuários
-- [ ] Painel admin: CRUD de módulos (criar, editar nome, ordenar)
-- [ ] Painel admin: CRUD de aulas (criar, editar, upload imagem, tipo, conteúdo, ordem)
-- [ ] Painel admin: configurações (checkout URL, pixel ID)
-- [ ] Checklist de segurança validado
-- [ ] Deploy em produção
+- [x] Painel admin: listagem de leads (test_sessions)
+- [x] Painel admin: listagem de compras
+- [x] Painel admin: listagem de usuários
+- [x] Painel admin: CRUD de módulos (criar, editar nome, ordenar)
+- [x] Painel admin: CRUD de aulas (criar, editar, upload imagem, tipo, conteúdo, ordem)
+- [x] Painel admin: configurações (checkout URL, pixel ID)
+
+- [x] Checklist de segurança validado
+- [x] Deploy em produção
 
 ---
 
