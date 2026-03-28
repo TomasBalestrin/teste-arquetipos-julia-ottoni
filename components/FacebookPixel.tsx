@@ -1,24 +1,12 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect, useState } from "react";
-import { createClient } from "@/lib/supabase/client";
 
-export default function FacebookPixel() {
-  const [pixelId, setPixelId] = useState<string | null>(null);
+interface FacebookPixelProps {
+  pixelId: string;
+}
 
-  useEffect(() => {
-    const supabase = createClient();
-    supabase
-      .from("site_settings")
-      .select("value")
-      .eq("key", "facebook_pixel_id")
-      .single()
-      .then(({ data }) => {
-        if (data?.value) setPixelId(data.value);
-      });
-  }, []);
-
+export default function FacebookPixel({ pixelId }: FacebookPixelProps) {
   if (!pixelId) return null;
 
   return (

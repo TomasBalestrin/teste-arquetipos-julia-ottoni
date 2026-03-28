@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { createAdminClient } from "@/lib/supabase/admin";
 import FacebookPixel from "@/components/FacebookPixel";
 import "./globals.css";
 
@@ -8,11 +9,27 @@ export const metadata: Metadata = {
     "Descubra seus 3 arquétipos dominantes com nosso teste de personalidade baseado em Jung",
 };
 
-export default function RootLayout({
+async function getPixelId(): Promise<string> {
+  try {
+    const supabase = createAdminClient();
+    const { data } = await supabase
+      .from("site_settings")
+      .select("value")
+      .eq("key", "facebook_pixel_id")
+      .single();
+    return data?.value ?? "";
+  } catch {
+    return "";
+  }
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pixelId = await getPixelId();
+
   return (
     <html lang="pt-BR">
       <head>
@@ -29,7 +46,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         {children}
-        <FacebookPixel />
+        {pixelId && <FacebookPixel pixelId={pixelId} />}
       </body>
     </html>
   );
