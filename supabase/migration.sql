@@ -280,7 +280,11 @@ CREATE POLICY "lessons_delete_admin" ON lessons
 
 -- ----- site_settings -----
 
--- Admin lê
+-- Leitura pública de configurações não-sensíveis (pixel, checkout URL)
+CREATE POLICY "site_settings_select_public" ON site_settings
+  FOR SELECT USING (key IN ('facebook_pixel_id', 'checkout_url'));
+
+-- Admin lê todas (incluindo secrets)
 CREATE POLICY "site_settings_select_admin" ON site_settings
   FOR SELECT USING (
     EXISTS (SELECT 1 FROM users WHERE id = auth.uid() AND role = 'admin')
