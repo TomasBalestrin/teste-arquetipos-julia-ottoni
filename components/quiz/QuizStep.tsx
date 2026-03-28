@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import type { Question, OptionLetter } from "@/lib/archetypes/questions";
-import QuizLogo from "./QuizLogo";
 import QuizProgress from "./QuizProgress";
 import QuizOptionCard from "./QuizOptionCard";
 
@@ -30,8 +29,6 @@ export default function QuizStep({
 
   return (
     <div className="flex flex-col items-center">
-      <QuizLogo />
-
       <h2 className="max-w-xl text-center font-display text-[clamp(22px,4vw,34px)] font-semibold leading-[1.15] tracking-[-0.02em] text-text">
         {question.text}
       </h2>

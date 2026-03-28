@@ -20,7 +20,7 @@ export default function QuizIntro({ onStart }: QuizIntroProps) {
     >
       <QuizLogo />
 
-      <h1 className="mx-auto max-w-[600px] font-display text-[clamp(26px,4vw,38px)] font-bold leading-[1.15] tracking-[-0.02em] text-text">
+      <h1 className="mx-auto max-w-[600px] font-display text-[clamp(23px,4vw,38px)] font-bold leading-[1.15] tracking-[-0.02em] text-text">
         Descubra seus{" "}
         <span className="text-primary">Arquétipos Dominantes</span> e a
         imagem que faz seu negócio valer mais

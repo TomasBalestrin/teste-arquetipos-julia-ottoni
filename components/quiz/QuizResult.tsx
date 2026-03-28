@@ -22,7 +22,7 @@ export default function QuizResult({ top3 }: QuizResultProps) {
       </span>
 
       {/* Title */}
-      <h2 className="text-center font-display text-[clamp(28px,4vw,38px)] font-bold leading-[1.15] tracking-[-0.02em] text-text">
+      <h2 className="text-center font-display text-[clamp(25px,4vw,38px)] font-bold leading-[1.15] tracking-[-0.02em] text-text">
         Seus arquétipos foram revelados.
       </h2>
 
