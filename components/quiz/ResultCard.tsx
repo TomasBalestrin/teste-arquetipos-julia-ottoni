@@ -11,15 +11,15 @@ export default function ResultCard({ entry }: ResultCardProps) {
 
   return (
     <div
-      className="relative min-h-[200px] overflow-hidden rounded-[24px] border border-[rgba(221,212,200,0.8)] bg-[rgba(255,255,255,0.78)] p-7"
+      className="result-card-shimmer relative min-h-[200px] overflow-hidden rounded-[24px] border border-[rgba(221,212,200,0.8)] bg-[rgba(255,255,255,0.78)] p-7"
       style={{ boxShadow: "0 18px 50px rgba(17, 17, 17, 0.08)" }}
     >
-      <span className="font-body text-[12px] font-semibold uppercase tracking-[0.08em] text-primary-dark">
+      <span className="relative z-10 font-body text-[12px] font-semibold uppercase tracking-[0.08em] text-primary-dark">
         Top {entry.rank}
       </span>
 
       <div
-        className="mt-3 pointer-events-none select-none"
+        className="relative z-10 mt-3 pointer-events-none select-none"
         style={{ filter: "blur(8px)", WebkitFilter: "blur(8px)" }}
         aria-hidden="true"
       >
@@ -33,7 +33,7 @@ export default function ResultCard({ entry }: ResultCardProps) {
       </div>
 
       <div
-        className="absolute inset-0 flex flex-col items-center justify-center"
+        className="absolute inset-0 z-20 flex flex-col items-center justify-center"
         style={{
           background: "rgba(255, 255, 255, 0.1)",
           backdropFilter: "blur(2px)",

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { toast } from "sonner";
 import { createTestSession } from "@/actions/quiz";
+import QuizLogo from "./QuizLogo";
 
 interface QuizEmailCaptureProps {
   onSubmit: (sessionId: string, email: string) => void;
@@ -29,9 +30,7 @@ export default function QuizEmailCapture({ onSubmit }: QuizEmailCaptureProps) {
 
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center text-center">
-      <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[rgba(205,163,40,0.12)]">
-        <span className="font-body text-[22px]">&#9993;</span>
-      </div>
+      <QuizLogo />
 
       <h2 className="font-display text-[clamp(24px,4vw,32px)] font-bold leading-[1.08] tracking-[-0.02em] text-text">
         Antes de começar...
