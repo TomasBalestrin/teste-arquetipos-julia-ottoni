@@ -2,6 +2,7 @@
 
 import type { Top3Entry } from "@/types";
 import ResultCard from "./ResultCard";
+import ResultCardMobile from "./ResultCardMobile";
 import OfferSection from "./OfferSection";
 
 interface QuizResultProps {
@@ -18,7 +19,15 @@ export default function QuizResult({ top3 }: QuizResultProps) {
         Desbloqueie para ver seu perfil completo
       </p>
 
-      <div className="mt-8 grid w-full max-w-[900px] grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-5">
+      {/* Mobile: 3 compact cards in a row */}
+      <div className="mt-8 grid w-full grid-cols-3 gap-[10px] md:hidden">
+        {top3.map((entry) => (
+          <ResultCardMobile key={entry.rank} entry={entry} />
+        ))}
+      </div>
+
+      {/* Desktop: full cards with blur + description */}
+      <div className="mt-8 hidden w-full max-w-[900px] grid-cols-3 gap-5 md:grid">
         {top3.map((entry) => (
           <ResultCard key={entry.rank} entry={entry} />
         ))}
