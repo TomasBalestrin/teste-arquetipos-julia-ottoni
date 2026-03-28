@@ -11,7 +11,7 @@ const emailSchema = z.string().email("Email inválido");
 const answerSchema = z.object({
   sessionId: z.string().uuid(),
   questionId: z.string().regex(/^q[1-9]$/),
-  option: z.enum(["A", "B", "C", "D"]),
+  option: z.enum(["A", "B", "C", "D", "E", "F"]),
 });
 
 export async function createTestSession(

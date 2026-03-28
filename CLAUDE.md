@@ -60,8 +60,8 @@
 
 ## UI / Design system
 - Consultar design-system.md para TODAS as decisões visuais
-- Font primária: Plus Jakarta Sans (via next/font/google)
-- Font mono/dados: Poppins (via next/font/google)
+- Font display/títulos: Lora (serif, via Google Fonts link)
+- Font body/interface: Poppins (sans-serif, via Google Fonts link)
 - Cores, espaçamento, componentes: seguir tokens do design-system.md
 - Responsivo: mobile-first, breakpoints sm/md/lg do Tailwind
 - Quiz deve funcionar perfeitamente em mobile (80%+ do tráfego é mobile)
