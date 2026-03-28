@@ -24,9 +24,8 @@ FEITO:
 - [x] Layout admin (sidebar admin + proteção de rota)
 - [x] Criar admin seed (usuário admin manual no banco)
 
-FALTA:
-- [ ] Deploy em staging na Vercel
-- [ ] Testar login/logout em staging
+- [x] Deploy em staging na Vercel
+- [x] Testar login/logout em staging
 
 ---
 
@@ -43,13 +42,10 @@ FEITO:
 - [x] Cálculo do Top 3 ao finalizar (etapa 11 → 12)
 - [x] Tela de resultado parcial (etapa 12) com Top 3 + CTA
 - [x] Facebook Pixel: PageView na etapa 1 + ClickCTA no botão de oferta
-
 - [x] API Route para webhook Hotmart
 - [x] Lógica de criação de usuário automática pós-webhook (senha: julia123)
 - [x] Vincular test_session ao user criado
-
-FALTA:
-- [ ] Testes manuais do fluxo completo (quiz → Hotmart → webhook → login)
+- [x] Testes manuais do fluxo completo (quiz → Hotmart → webhook → login)
 
 ---
 
@@ -87,6 +83,7 @@ FEITO:
 - Checkout é EXTERNO (Hotmart) — apenas um redirect com URL configurável
 - Facebook Pixel carregado dinamicamente a partir de site_settings
 - Conteúdo das aulas é igual para todos os usuários — não há filtro por arquétipo
+- Layouts auth/admin usam service role (admin client) para queries de role/must_reset_password — bypassa RLS circular
 
 ---
 
