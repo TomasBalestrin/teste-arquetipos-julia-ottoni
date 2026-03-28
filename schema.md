@@ -163,67 +163,89 @@
 | criador | Criador | Dar forma a algo com significado duradouro | Mediocridade e falta de visão |
 | governante | Governante | Criar ordem e prosperidade | Caos e perda de controle |
 
-### Estrutura das perguntas (9 perguntas, 4 opções cada)
+### Estrutura das perguntas (9 perguntas, 6 opções cada)
 
-Cada opção dá **3 pontos** ao arquétipo primário e **1 ponto** ao arquétipo secundário. Isso garante diferenciação clara no ranking final.
+Cada opção dá **3 pontos** ao arquétipo primário e **1 ponto** ao arquétipo secundário. Com 6 opções por pergunta, a cobertura dos 12 arquétipos é mais equilibrada e o resultado mais preciso.
 
 **Pergunta 1 — "O que te motiva a sair da cama todos os dias?"**
-- A) Aprender algo novo que mude minha visão de mundo → Sábio (3) + Explorador (1)
-- B) Construir algo que tenha meu nome e minha essência → Criador (3) + Governante (1)
-- C) Ajudar alguém que precisa de mim → Cuidador (3) + Inocente (1)
-- D) Viver uma experiência que me faça sentir vivo → Amante (3) + Bobo da Corte (1)
+- A) Aprender algo que mude minha forma de ver o mundo → Sábio (3) + Explorador (1)
+- B) Dar vida a algo que tenha meu nome e minha essência → Criador (3) + Governante (1)
+- C) Saber que alguém conta comigo — cuidar das pessoas dá sentido → Cuidador (3) + Inocente (1)
+- D) Viver intensamente, sentir tudo — cada dia é uma chance de conexão → Amante (3) + Bobo da Corte (1)
+- E) Superar mais um desafio e provar do que sou capaz → Herói (3) + Rebelde (1)
+- F) A sensação de que existe um mundo imenso esperando ser descoberto → Explorador (3) + Mago (1)
 
 **Pergunta 2 — "Em um grupo, qual papel você naturalmente assume?"**
-- A) O que organiza e toma decisões → Governante (3) + Herói (1)
-- B) O que faz todo mundo rir e relaxar → Bobo da Corte (3) + Cara Comum (1)
-- C) O que escuta e acolhe quem precisa → Cuidador (3) + Amante (1)
-- D) O que questiona as regras e propõe algo diferente → Rebelde (3) + Mago (1)
+- A) Organizo tudo e garanto que as coisas aconteçam → Governante (3) + Herói (1)
+- B) Faço todo mundo rir e transformo o clima pesado em leve → Bobo da Corte (3) + Cara Comum (1)
+- C) Escuto de verdade e acolho quem precisa → Cuidador (3) + Amante (1)
+- D) Questiono o que não faz sentido e proponho caminhos novos → Rebelde (3) + Mago (1)
+- E) Trago referências e ajudo o grupo a decidir com inteligência → Sábio (3) + Criador (1)
+- F) Conecto as pessoas e garanto que todos se sintam incluídos → Cara Comum (3) + Inocente (1)
 
 **Pergunta 3 — "O que mais te incomoda no mundo?"**
-- A) A injustiça e a covardia diante dos problemas → Herói (3) + Rebelde (1)
-- B) A superficialidade e a falta de profundidade → Sábio (3) + Mago (1)
-- C) A solidão e a frieza nas relações → Amante (3) + Cuidador (1)
-- D) A mesmice e a falta de criatividade → Criador (3) + Explorador (1)
+- A) A covardia diante da injustiça — quem pode agir e se omite → Herói (3) + Rebelde (1)
+- B) A superficialidade — as pessoas não querem pensar com profundidade → Sábio (3) + Mago (1)
+- C) A frieza nas relações — como as pessoas se tornaram tão distantes → Amante (3) + Cuidador (1)
+- D) A mesmice e a falta de originalidade em tudo → Criador (3) + Explorador (1)
+- E) A maldade gratuita — por que não podemos viver em paz? → Inocente (3) + Cara Comum (1)
+- F) O caos e a desorganização — sem estrutura, nada funciona → Governante (3) + Sábio (1)
 
 **Pergunta 4 — "Se pudesse escolher um superpoder, qual seria?"**
 - A) Transformar qualquer situação com um estalar de dedos → Mago (3) + Criador (1)
-- B) Ser invulnerável e proteger quem amo → Herói (3) + Cuidador (1)
-- C) Teletransporte para qualquer lugar do mundo → Explorador (3) + Bobo da Corte (1)
-- D) Ler a mente das pessoas e entender tudo → Sábio (3) + Governante (1)
+- B) Ser invulnerável e proteger quem eu amo de todo mal → Herói (3) + Cuidador (1)
+- C) Teletransporte instantâneo para qualquer lugar do planeta → Explorador (3) + Bobo da Corte (1)
+- D) Ler a mente das pessoas e compreender tudo por trás das palavras → Sábio (3) + Governante (1)
+- E) Quebrar qualquer barreira que limite a liberdade das pessoas → Rebelde (3) + Explorador (1)
+- F) Fazer toda dor e sofrimento desaparecerem do mundo → Inocente (3) + Amante (1)
 
-**Pergunta 5 — "Como você lida com conflitos?"**
-- A) Enfrento de frente, sem medo → Herói (3) + Governante (1)
-- B) Busco um acordo que deixe todos bem → Cara Comum (3) + Cuidador (1)
+**Pergunta 5 — "Como você lida com um conflito difícil?"**
+- A) Enfrento de frente, com coragem — não fujo de nada → Herói (3) + Governante (1)
+- B) Busco um acordo que funcione pra todo mundo → Cara Comum (3) + Cuidador (1)
 - C) Questiono se as regras estão erradas e provoco a mudança → Rebelde (3) + Mago (1)
-- D) Levo na leveza e tento descontrair o ambiente → Bobo da Corte (3) + Inocente (1)
+- D) Levo na leveza e tento descontrair com bom humor → Bobo da Corte (3) + Inocente (1)
+- E) Analiso com calma e busco a solução mais racional → Mago (3) + Sábio (1)
+- F) Priorizo os sentimentos das pessoas, mesmo que custe mais tempo → Cuidador (3) + Amante (1)
 
 **Pergunta 6 — "O que mais te representa num fim de semana ideal?"**
-- A) Uma viagem sem roteiro para um lugar novo → Explorador (3) + Rebelde (1)
-- B) Um dia em casa criando algo com as mãos → Criador (3) + Sábio (1)
-- C) Um jantar íntimo com quem eu amo → Amante (3) + Cara Comum (1)
-- D) Acreditar que tudo vai dar certo e simplesmente descansar → Inocente (3) + Bobo da Corte (1)
+- A) Uma viagem sem roteiro para um lugar que nunca visitei → Explorador (3) + Rebelde (1)
+- B) Um dia inteiro dedicado a criar algo com as mãos → Criador (3) + Sábio (1)
+- C) Um jantar íntimo e profundo com quem eu amo → Amante (3) + Cara Comum (1)
+- D) Nada planejado — só confiar que tudo vai dar certo e descansar → Inocente (3) + Bobo da Corte (1)
+- E) Planejar a próxima semana e organizar a vida para tudo fluir → Governante (3) + Criador (1)
+- F) Sair sem destino com amigos, rindo e aproveitando o momento → Bobo da Corte (3) + Explorador (1)
 
 **Pergunta 7 — "Qual frase mais te define?"**
 - A) "O mundo precisa de mais coragem e menos desculpas" → Herói (3) + Rebelde (1)
-- B) "Tudo pode ser transformado se você acreditar" → Mago (3) + Inocente (1)
-- C) "Eu só quero um lugar onde eu pertença" → Cara Comum (3) + Amante (1)
-- D) "Controle é liberdade — quem organiza, prospera" → Governante (3) + Sábio (1)
+- B) "Tudo pode ser transformado se você acreditar no impossível" → Mago (3) + Inocente (1)
+- C) "Eu só quero um lugar onde eu pertença de verdade" → Cara Comum (3) + Amante (1)
+- D) "Controle é liberdade — quem organiza sua vida, prospera" → Governante (3) + Sábio (1)
+- E) "Minhas mãos existem pra deixar algo bonito nesse mundo" → Criador (3) + Mago (1)
+- F) "A melhor coisa da vida é o caminho, não o destino" → Explorador (3) + Herói (1)
 
 **Pergunta 8 — "O que você mais valoriza em alguém?"**
-- A) A generosidade e o cuidado com os outros → Cuidador (3) + Inocente (1)
+- A) A generosidade genuína e o cuidado sem esperar nada em troca → Cuidador (3) + Inocente (1)
 - B) A autenticidade e a coragem de ser diferente → Rebelde (3) + Explorador (1)
-- C) A inteligência e a capacidade de ensinar → Sábio (3) + Criador (1)
-- D) O bom humor e a capacidade de viver leve → Bobo da Corte (3) + Cara Comum (1)
+- C) A inteligência e a capacidade de ensinar com generosidade → Sábio (3) + Criador (1)
+- D) O bom humor e a capacidade de tornar qualquer momento leve → Bobo da Corte (3) + Cara Comum (1)
+- E) A intensidade e a entrega verdadeira nos sentimentos → Amante (3) + Cuidador (1)
+- F) A bondade pura e a fé de que o mundo pode ser melhor → Inocente (3) + Governante (1)
 
 **Pergunta 9 — "Se sua vida fosse um filme, qual gênero seria?"**
-- A) Épico de aventura com missão heroica → Herói (3) + Explorador (1)
-- B) Drama romântico com conexões profundas → Amante (3) + Cuidador (1)
-- C) Ficção científica com reviravoltas inesperadas → Mago (3) + Criador (1)
-- D) Comédia sobre pessoas reais e situações do dia a dia → Cara Comum (3) + Bobo da Corte (1)
+- A) Épico de aventura com uma missão heroica que muda tudo → Herói (3) + Explorador (1)
+- B) Drama romântico com conexões profundas que marcam a alma → Amante (3) + Cuidador (1)
+- C) Ficção científica com reviravoltas e realidades paralelas → Mago (3) + Criador (1)
+- D) Comédia sobre pessoas reais e as belezas simples do dia a dia → Cara Comum (3) + Bobo da Corte (1)
+- E) Thriller de resistência contra um sistema injusto → Rebelde (3) + Herói (1)
+- F) Documentário sobre grandes líderes que transformaram nações → Governante (3) + Amante (1)
 
 ### Distribuição de cobertura
 
-Cada arquétipo aparece como primário (3 pts) em pelo menos 2 perguntas e como secundário (1 pt) em pelo menos 2 perguntas. Score máximo possível por arquétipo: 12 pontos (se aparecer como primário em 4 perguntas). Score mínimo possível: 0.
+Com 9 perguntas × 6 opções = 54 slots primários:
+- Cada arquétipo aparece como primário em 4-6 perguntas (mín 4, máx 6)
+- Cada arquétipo aparece como secundário em pelo menos 3 perguntas
+- Score máximo possível por arquétipo: 18 pontos (se aparecer como primário 6 vezes)
+- Score mínimo possível: 0
 
 ### Cálculo do resultado
 1. Somar scores de todas as respostas por arquétipo
