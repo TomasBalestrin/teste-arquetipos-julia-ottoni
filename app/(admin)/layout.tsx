@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { Toaster } from "sonner";
 import AdminSidebar from "@/components/admin/AdminSidebar";
 
@@ -17,7 +18,9 @@ export default async function AdminLayout({
     redirect("/login");
   }
 
-  const { data } = await supabase
+  // Use service role to bypass RLS for admin check
+  const adminSupabase = createAdminClient();
+  const { data } = await adminSupabase
     .from("users")
     .select("role")
     .eq("id", user.id)
