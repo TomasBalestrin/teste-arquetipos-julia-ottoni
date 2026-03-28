@@ -65,13 +65,14 @@ FEITO:
 - [x] Funcionalidade de refazer teste (sem pagar, sem email)
 - [x] Tela de redefinição de senha (primeiro acesso)
 
+- [x] Painel admin: listagem de leads (test_sessions)
+- [x] Painel admin: listagem de compras
+- [x] Painel admin: listagem de usuários
+- [x] Painel admin: CRUD de módulos (criar, editar nome, ordenar)
+- [x] Painel admin: CRUD de aulas (criar, editar, upload imagem, tipo, conteúdo, ordem)
+- [x] Painel admin: configurações (checkout URL, pixel ID)
+
 FALTA:
-- [ ] Painel admin: listagem de leads (test_sessions)
-- [ ] Painel admin: listagem de compras
-- [ ] Painel admin: listagem de usuários
-- [ ] Painel admin: CRUD de módulos (criar, editar nome, ordenar)
-- [ ] Painel admin: CRUD de aulas (criar, editar, upload imagem, tipo, conteúdo, ordem)
-- [ ] Painel admin: configurações (checkout URL, pixel ID)
 - [ ] Checklist de segurança validado
 - [ ] Deploy em produção
 
