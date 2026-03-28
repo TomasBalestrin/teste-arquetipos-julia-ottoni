@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import FacebookPixel from "@/components/FacebookPixel";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -26,7 +27,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <FacebookPixel />
+      </body>
     </html>
   );
 }
