@@ -9,7 +9,6 @@ import type { Top3Entry } from "@/types";
 import QuizIntro from "./QuizIntro";
 import QuizEmailCapture from "./QuizEmailCapture";
 import QuizStep from "./QuizStep";
-import QuizProgress from "./QuizProgress";
 import QuizResult from "./QuizResult";
 
 export default function QuizFlow() {
@@ -27,6 +26,7 @@ export default function QuizFlow() {
     setSlideDir("out");
     setAnimating(true);
     setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
       setStep(nextStep);
       setSlideDir("in");
       setTimeout(() => setAnimating(false), 50);
@@ -70,8 +70,6 @@ export default function QuizFlow() {
     }
   }
 
-  const showProgress = step >= 3 && step <= 11;
-
   const transitionCls = animating
     ? slideDir === "out"
       ? "translate-x-[-30px] opacity-0"
@@ -80,8 +78,6 @@ export default function QuizFlow() {
 
   return (
     <div className="mx-auto max-w-[760px] px-4 pb-16 pt-10">
-      {showProgress && <QuizProgress currentStep={step} />}
-
       <div className={`transition-all duration-300 ease-out ${transitionCls}`}>
         {step === 1 && <QuizIntro onStart={handleStart} />}
         {step === 2 && <QuizEmailCapture onSubmit={handleEmail} />}
@@ -90,6 +86,7 @@ export default function QuizFlow() {
             key={step}
             question={QUESTIONS[step - 3]}
             questionNumber={step - 2}
+            currentStep={step}
             onAnswer={handleAnswer}
             loading={loading}
           />
