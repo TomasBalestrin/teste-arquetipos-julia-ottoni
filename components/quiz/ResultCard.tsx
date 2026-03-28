@@ -14,14 +14,12 @@ export default function ResultCard({ entry }: ResultCardProps) {
       className="relative min-h-[200px] overflow-hidden rounded-[24px] border border-[rgba(221,212,200,0.8)] bg-[rgba(255,255,255,0.78)] p-7"
       style={{ boxShadow: "0 18px 50px rgba(17, 17, 17, 0.08)" }}
     >
-      {/* Visible label */}
       <span className="font-body text-[12px] font-semibold uppercase tracking-[0.08em] text-primary-dark">
         Top {entry.rank}
       </span>
 
-      {/* Blurred content */}
       <div
-        className="mt-3 select-none pointer-events-none"
+        className="mt-3 pointer-events-none select-none"
         style={{ filter: "blur(8px)", WebkitFilter: "blur(8px)" }}
         aria-hidden="true"
       >
@@ -34,7 +32,6 @@ export default function ResultCard({ entry }: ResultCardProps) {
         </p>
       </div>
 
-      {/* Lock overlay */}
       <div
         className="absolute inset-0 flex flex-col items-center justify-center"
         style={{
