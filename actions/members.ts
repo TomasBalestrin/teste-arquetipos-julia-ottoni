@@ -14,6 +14,15 @@ interface UserProfile {
 export async function getUserProfile(
   userId: string
 ): Promise<ActionResponse<UserProfile>> {
+  // Verify caller is the same user
+  const { createClient } = await import("@/lib/supabase/server");
+  const serverSupabase = createClient();
+  const { data: { user: authUser } } = await serverSupabase.auth.getUser();
+
+  if (!authUser || authUser.id !== userId) {
+    return { success: false, error: "Não autenticado" };
+  }
+
   const supabase = createAdminClient();
 
   const { data: user, error: userErr } = await supabase

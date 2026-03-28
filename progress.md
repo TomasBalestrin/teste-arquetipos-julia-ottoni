@@ -1,9 +1,9 @@
 # Progress — Teste dos Arquétipos
 
 ## Status geral
-MILESTONE ATUAL: 1 — Fundação
+MILESTONE ATUAL: 3 — Completo
 INÍCIO: Março 2026
-ÚLTIMA SESSÃO: 2026-03-27
+ÚLTIMA SESSÃO: 2026-03-28
 
 ---
 
@@ -72,9 +72,8 @@ FEITO:
 - [x] Painel admin: CRUD de aulas (criar, editar, upload imagem, tipo, conteúdo, ordem)
 - [x] Painel admin: configurações (checkout URL, pixel ID)
 
-FALTA:
-- [ ] Checklist de segurança validado
-- [ ] Deploy em produção
+- [x] Checklist de segurança validado
+- [x] Deploy em produção
 
 ---
 

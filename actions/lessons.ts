@@ -7,9 +7,28 @@ interface ModuleWithLessons extends Module {
   lessons: Lesson[];
 }
 
+async function requireAccess(): Promise<string | null> {
+  const { createClient } = await import("@/lib/supabase/server");
+  const serverSupabase = createClient();
+  const { data: { user } } = await serverSupabase.auth.getUser();
+  if (!user) return null;
+
+  const supabase = createAdminClient();
+  const { data } = await supabase
+    .from("users")
+    .select("access_granted")
+    .eq("id", user.id)
+    .single();
+
+  return data?.access_granted ? user.id : null;
+}
+
 export async function getModuleWithLessons(
   moduleId: string
 ): Promise<ActionResponse<ModuleWithLessons>> {
+  const uid = await requireAccess();
+  if (!uid) return { success: false, error: "Sem permissão" };
+
   const supabase = createAdminClient();
 
   const { data: mod, error: modErr } = await supabase
@@ -40,6 +59,9 @@ export async function getModuleWithLessons(
 export async function getAllLessons(): Promise<
   ActionResponse<ModuleWithLessons[]>
 > {
+  const uid = await requireAccess();
+  if (!uid) return { success: false, error: "Sem permissão" };
+
   const supabase = createAdminClient();
 
   const { data: modules, error: modErr } = await supabase
