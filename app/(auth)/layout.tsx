@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 import { createClient } from "@/lib/supabase/server";
 import { Toaster } from "sonner";
 import Sidebar from "@/components/members/Sidebar";
@@ -17,6 +18,20 @@ export default async function AuthLayout({
     redirect("/login");
   }
 
+  const { data: dbUser } = await supabase
+    .from("users")
+    .select("must_reset_password")
+    .eq("id", user.id)
+    .single();
+
+  const headersList = headers();
+  const pathname = headersList.get("x-next-pathname") ?? "";
+  const isResetPage = pathname === "/redefinir-senha";
+
+  if (dbUser?.must_reset_password && !isResetPage) {
+    redirect("/redefinir-senha");
+  }
+
   return (
     <div
       className="min-h-screen"
@@ -26,7 +41,7 @@ export default async function AuthLayout({
       }}
     >
       <Sidebar />
-      <main className="min-h-screen px-4 py-8 lg:ml-[312px] lg:py-10 lg:pr-8">
+      <main className="min-h-screen px-4 py-8 pt-16 lg:ml-[312px] lg:py-10 lg:pr-8 lg:pt-10">
         {children}
       </main>
       <Toaster position="top-center" richColors />
