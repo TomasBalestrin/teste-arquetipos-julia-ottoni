@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { headers } from "next/headers";
 import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { Toaster } from "sonner";
 import Sidebar from "@/components/members/Sidebar";
 
@@ -18,7 +19,9 @@ export default async function AuthLayout({
     redirect("/login");
   }
 
-  const { data: dbUser } = await supabase
+  // Use service role to bypass RLS for user lookup
+  const adminSupabase = createAdminClient();
+  const { data: dbUser } = await adminSupabase
     .from("users")
     .select("must_reset_password")
     .eq("id", user.id)

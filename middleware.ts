@@ -48,7 +48,13 @@ export async function middleware(request: NextRequest) {
   }
 
   if (isAdminRoute && user) {
-    const { data } = await supabase
+    // Use service role to bypass RLS for admin check
+    const { createClient: createAdmin } = await import("@supabase/supabase-js");
+    const adminClient = createAdmin(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.SUPABASE_SERVICE_ROLE_KEY!
+    );
+    const { data } = await adminClient
       .from("users")
       .select("role")
       .eq("id", user.id)
