@@ -20,7 +20,7 @@ export const ARCHETYPES: Archetype[] = [
   { slug: "governante", name: "Governante", motivation: "Criar ordem e prosperidade", fear: "Caos e perda de controle" },
 ];
 
-/** Ordem de desempate — índice menor = maior prioridade */
+/** Ordem de desempate: índice menor = maior prioridade */
 export const TIEBREAK_ORDER: string[] = [
   "heroi", "mago", "sabio", "explorador", "criador", "amante",
   "rebelde", "cuidador", "governante", "cara_comum", "bobo_da_corte", "inocente",

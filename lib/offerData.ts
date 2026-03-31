@@ -4,13 +4,14 @@ export interface OfferItem {
 }
 
 export const OFFER_ITEMS: OfferItem[] = [
-  { name: "Teste dos Arquétipos", originalPrice: "R$ 197,00" },
-  { name: "Aulas explicando cada arquétipo na prática", originalPrice: "R$ 97,00" },
-  { name: "Identidade Fotográfica de cada Arquétipo", originalPrice: "R$ 67,00" },
-  { name: "Identidade Visual de cada Arquétipo", originalPrice: "R$ 87,00" },
-  { name: "Paleta de cores de cada Arquétipo", originalPrice: "R$ 97,00" },
-  { name: "Aula explicando a estrutura correta da BIO", originalPrice: "R$ 67,00" },
+  { name: "Seus 3 arquétipos dominantes, por ordem de influência", originalPrice: "R$ 197" },
+  { name: "12 aulas rápidas explicando cada arquétipo", originalPrice: "R$ 247" },
+  { name: "1 aula de identidade fotográfica de cada arquétipo", originalPrice: "R$ 67" },
+  { name: "1 aula de identidade visual de cada arquétipo", originalPrice: "R$ 67" },
+  { name: "1 aula de paleta de cores de cada arquétipo", originalPrice: "R$ 67" },
+  { name: "1 aula estrutura correta da bio do Insta", originalPrice: "R$ 67" },
 ];
 
-export const OFFER_TOTAL = "R$ 612,00";
-export const OFFER_FINAL_PRICE = "R$ 67,00";
+export const OFFER_TOTAL = "R$ 712";
+export const OFFER_FINAL_PRICE = "R$ 67";
+export const OFFER_INSTALLMENT = "12x R$ 6,70";
