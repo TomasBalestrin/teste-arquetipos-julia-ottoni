@@ -8,8 +8,8 @@ export const QUESTIONS_PART1: Question[] = [
     options: [
       { label: "A", text: "A possibilidade de aprender algo que mude minha forma de ver o mundo", primary_archetype: "sabio", secondary_archetype: "explorador" },
       { label: "B", text: "Dar vida a algo que tenha meu nome e minha essência", primary_archetype: "criador", secondary_archetype: "governante" },
-      { label: "C", text: "Saber que alguém conta comigo — cuidar das pessoas dá sentido a tudo", primary_archetype: "cuidador", secondary_archetype: "inocente" },
-      { label: "D", text: "Viver intensamente, sentir tudo — cada dia é uma chance de conexão real", primary_archetype: "amante", secondary_archetype: "bobo_da_corte" },
+      { label: "C", text: "Saber que alguém conta comigo, cuidar das pessoas dá sentido a tudo", primary_archetype: "cuidador", secondary_archetype: "inocente" },
+      { label: "D", text: "Viver intensamente, sentir tudo. Cada dia é uma chance de conexão real", primary_archetype: "amante", secondary_archetype: "bobo_da_corte" },
       { label: "E", text: "Superar mais um desafio e provar do que sou capaz", primary_archetype: "heroi", secondary_archetype: "rebelde" },
       { label: "F", text: "A sensação de que existe um mundo imenso esperando ser descoberto", primary_archetype: "explorador", secondary_archetype: "mago" },
     ],
@@ -30,12 +30,12 @@ export const QUESTIONS_PART1: Question[] = [
     id: "q3",
     text: "O que mais te incomoda no mundo?",
     options: [
-      { label: "A", text: "A covardia diante da injustiça — quem pode agir e se omite", primary_archetype: "heroi", secondary_archetype: "rebelde" },
-      { label: "B", text: "A superficialidade — as pessoas não querem pensar com profundidade", primary_archetype: "sabio", secondary_archetype: "mago" },
-      { label: "C", text: "A frieza nas relações — como as pessoas se tornaram tão distantes", primary_archetype: "amante", secondary_archetype: "cuidador" },
+      { label: "A", text: "A covardia diante da injustiça: quem pode agir e se omite", primary_archetype: "heroi", secondary_archetype: "rebelde" },
+      { label: "B", text: "A superficialidade, as pessoas não querem pensar com profundidade", primary_archetype: "sabio", secondary_archetype: "mago" },
+      { label: "C", text: "A frieza nas relações, como as pessoas se tornaram tão distantes", primary_archetype: "amante", secondary_archetype: "cuidador" },
       { label: "D", text: "A mesmice e a falta de originalidade em tudo", primary_archetype: "criador", secondary_archetype: "explorador" },
-      { label: "E", text: "A maldade gratuita — por que não podemos viver em paz?", primary_archetype: "inocente", secondary_archetype: "cara_comum" },
-      { label: "F", text: "O caos e a desorganização — sem estrutura, nada funciona", primary_archetype: "governante", secondary_archetype: "sabio" },
+      { label: "E", text: "A maldade gratuita. Por que não podemos viver em paz?", primary_archetype: "inocente", secondary_archetype: "cara_comum" },
+      { label: "F", text: "O caos e a desorganização. Sem estrutura, nada funciona", primary_archetype: "governante", secondary_archetype: "sabio" },
     ],
   },
   {
@@ -54,7 +54,7 @@ export const QUESTIONS_PART1: Question[] = [
     id: "q5",
     text: "Como você lida com um conflito difícil?",
     options: [
-      { label: "A", text: "Enfrento de frente, com coragem — não fujo de nada", primary_archetype: "heroi", secondary_archetype: "governante" },
+      { label: "A", text: "Enfrento de frente, com coragem. Não fujo de nada", primary_archetype: "heroi", secondary_archetype: "governante" },
       { label: "B", text: "Busco um acordo que funcione pra todo mundo, sem deixar ninguém de fora", primary_archetype: "cara_comum", secondary_archetype: "cuidador" },
       { label: "C", text: "Questiono se as regras estão erradas e provoco a mudança necessária", primary_archetype: "rebelde", secondary_archetype: "mago" },
       { label: "D", text: "Levo na leveza e tento descontrair o ambiente com bom humor", primary_archetype: "bobo_da_corte", secondary_archetype: "inocente" },
