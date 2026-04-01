@@ -9,6 +9,7 @@ import type { Top3Entry } from "@/types";
 import QuizIntro from "./QuizIntro";
 import QuizEmailCapture from "./QuizEmailCapture";
 import QuizStep from "./QuizStep";
+import QuizResultPreview from "./QuizResultPreview";
 import QuizResult from "./QuizResult";
 
 export default function QuizFlow() {
@@ -33,9 +34,7 @@ export default function QuizFlow() {
     }, 300);
   }, []);
 
-  function handleStart() {
-    advanceStep(2);
-  }
+  function handleStart() { advanceStep(2); }
 
   function handleEmail(id: string) {
     setSessionId(id);
@@ -91,7 +90,10 @@ export default function QuizFlow() {
             loading={loading}
           />
         )}
-        {step === 12 && <QuizResult top3={top3} />}
+        {step === 12 && (
+          <QuizResultPreview top3={top3} onNext={() => advanceStep(13)} />
+        )}
+        {step === 13 && <QuizResult />}
       </div>
     </div>
   );
