@@ -10,6 +10,12 @@ export function trackPageView(): void {
   }
 }
 
+export function trackViewResult(): void {
+  if (typeof window !== "undefined" && window.fbq) {
+    window.fbq("trackCustom", "ViewResult");
+  }
+}
+
 export function trackClickCTA(): void {
   if (typeof window !== "undefined" && window.fbq) {
     window.fbq("track", "Lead");
