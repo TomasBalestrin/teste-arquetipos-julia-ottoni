@@ -9,6 +9,10 @@ export const metadata: Metadata = {
     "Descubra seus 3 arquétipos dominantes com nosso teste de personalidade baseado em Jung",
 };
 
+// Lê o pixel_id do banco a cada request — sem isso o valor fica "congelado"
+// no build (vazio) e o pixel nunca carrega.
+export const dynamic = "force-dynamic";
+
 async function getPixelId(): Promise<string> {
   try {
     const supabase = createAdminClient();

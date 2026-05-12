@@ -11,7 +11,10 @@ export default function PriceCard({ checkoutUrl }: PriceCardProps) {
   function handleCTA() {
     trackClickCTA();
     if (checkoutUrl) {
-      window.location.href = checkoutUrl;
+      const url = /^https?:\/\//i.test(checkoutUrl)
+        ? checkoutUrl
+        : `https://${checkoutUrl}`;
+      window.location.href = url;
     }
   }
 
