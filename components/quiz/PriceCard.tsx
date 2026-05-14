@@ -11,7 +11,10 @@ export default function PriceCard({ checkoutUrl }: PriceCardProps) {
   function handleCTA() {
     trackClickCTA();
     if (checkoutUrl) {
-      window.location.href = checkoutUrl;
+      const url = /^https?:\/\//i.test(checkoutUrl)
+        ? checkoutUrl
+        : `https://${checkoutUrl}`;
+      window.location.href = url;
     }
   }
 
@@ -42,9 +45,9 @@ export default function PriceCard({ checkoutUrl }: PriceCardProps) {
       </p>
 
       <div className="relative mt-2">
-        <span className="font-body text-[22px] font-medium text-text">12x </span>
+        <span className="font-body text-[22px] font-medium text-text">9x </span>
         <span className="font-display text-[48px] font-bold text-primary-dark sm:text-[52px]">
-          R$ 6,70
+          R$ 8,56
         </span>
       </div>
 

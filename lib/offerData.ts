@@ -14,4 +14,4 @@ export const OFFER_ITEMS: OfferItem[] = [
 
 export const OFFER_TOTAL = "R$ 712";
 export const OFFER_FINAL_PRICE = "R$ 67";
-export const OFFER_INSTALLMENT = "12x R$ 6,70";
+export const OFFER_INSTALLMENT = "9x R$ 8,56";

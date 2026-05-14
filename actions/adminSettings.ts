@@ -42,8 +42,7 @@ export async function updateSiteSetting(
   const supabase = createAdminClient();
   const { error } = await supabase
     .from("site_settings")
-    .update({ value })
-    .eq("key", key);
+    .upsert({ key, value }, { onConflict: "key" });
 
   if (error) return { success: false, error: "Erro ao salvar configuração" };
   return { success: true };
